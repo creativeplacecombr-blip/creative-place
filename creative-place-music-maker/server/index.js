@@ -1,0 +1,1 @@
+import express from'express';const app=express();app.use(express.json());app.post('/api/generate',(req,res)=>{res.json({audioUrl:'sample-output.mp3',interpretation:'mock response'});});app.listen(4000,()=>console.log('Server running'));
